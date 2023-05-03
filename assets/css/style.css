@@ -46,3 +46,21 @@ button{
     /* font-weight: 500; */
     background: hsl(252, 100%, 67%);
 }
+
+li{
+    margin-bottom: 10px;
+    list-style: none;
+    border: 1px solid black;
+}
+.reaction-red{
+    background-color: hsl(0, 100%, 67%);
+}
+.memory-yellow{
+    background-color: hsl(39, 100%, 56%);
+}
+.verbal-green{
+    background-color: hsl(166, 100%, 37%);
+}
+.visual-blue{
+    background-color: hsl(234, 85%, 45%);
+}
