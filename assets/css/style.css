@@ -1,10 +1,11 @@
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
-@import url("https://fonts.google.com/specimen/Hanken+Grotesk");
+/* @import url("https://fonts.google.com/specimen/Hanken+Grotesk"); */
 
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Hanken Grotesh', sans-serif;
     /* background-color: hsl(0, 0%, 100%); */
 }
 
@@ -22,16 +23,26 @@ body{
 .result-main{
     /* background-color: hsl(241, 81%, 54%); */
     background-color: hsl(252, 100%, 67%);
-    font-family: 'Hansen', 'Grotesk';
     font-weight: 500;
 }
 
 .result{
-    font-family: 'Hansen', 'Grotesk';
+    font-family: 'Hanken Grotesh', sans-serif;
     font-weight: 500;
 }
 
 .reaction{
     display: flex;
     flex-direction: column;
+}
+
+button{
+    width: 10rem;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    /* font-weight: 500; */
+    background: hsl(252, 100%, 67%);
 }
