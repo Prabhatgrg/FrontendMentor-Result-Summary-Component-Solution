@@ -1,0 +1,37 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+@import url("https://fonts.google.com/specimen/Hanken+Grotesk");
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: hsl(0, 0%, 100%); */
+}
+
+body{
+    /* background-color: hsl(241, 100%, 89%); */
+    background-color: hsl(221, 100%, 96%);
+}
+
+.main-section{
+    display: flex;
+    border: 1px;
+    border-radius: 20%;
+}
+
+.result-main{
+    /* background-color: hsl(241, 81%, 54%); */
+    background-color: hsl(252, 100%, 67%);
+    font-family: 'Hansen', 'Grotesk';
+    font-weight: 500;
+}
+
+.result{
+    font-family: 'Hansen', 'Grotesk';
+    font-weight: 500;
+}
+
+.reaction{
+    display: flex;
+    flex-direction: column;
+}
