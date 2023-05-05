@@ -9,7 +9,6 @@ body{
     /* background-color: hsl(241, 100%, 89%); */
     min-height: 100vh;
     background-color: hsl(221, 100%, 96%);
-    font-size: 18px;
 }
 h2{
     margin-bottom: 20px;
@@ -37,14 +36,38 @@ li{
     border-radius: 11px;
     padding: 10px;
 }
+/* 
+ * Utilities
+*/
+.font-size{
+    font-size: 18px;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-800{
+    font-weight: 800;
+}
+.text-align{
+    text-align: center;
+}
+.text-color{
+    color: hsl(0, 0%, 100%);
+}
+/* 
+ * End of Utilities
+*/
 .main-section{
     display: flex;
-    max-height: 513px;
-    padding-bottom: 150px;
+    /* padding-bottom: 150px; */
 }
 .container{
     max-width: 735px;
     margin: 100px auto;
+    /* padding-top: 20px; */
     /* padding-bottom: 150px; */
 }
 .wrapper{
@@ -53,9 +76,10 @@ li{
     border-radius: 32px;
 }
 .result-main{
-    border-radius: 15px;
-    background-color: hsl(252, 100%, 67%);
+    border-radius: 33px;
+    background: linear-gradient(hsl(251, 97%, 62%), hsl(244, 86%, 56%));
     font-weight: 500;
+    padding-top: 25px;
 }
 .result{
     padding: 20px;
@@ -67,13 +91,12 @@ li{
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 20px;
+    margin: 40px;
     width: 350px;
 }
-/* .result .title,
-.summary .title{
-    font-size: 18px;
-} */
+.result-section-color{
+    color: hsl(256, 100%, 89%);
+}
 .feeds{
     display: flex;
     flex-direction: column;
@@ -106,6 +129,14 @@ li{
     background: hsla(234, 85%, 45%, 0.02);
     color: hsl(234, 85%, 45%);
 }
-.text-color{
-    color: hsl(0, 0%, 100%);
+.score{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 60px;
+    background: linear-gradient( hsl(255, 72%, 45%),hsl(246, 86%, 57%));
+    border-radius: 100%;
 }
