@@ -1,46 +1,62 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Hanken Grotesk';
+    font-family: 'Hanken Grotesk', sans-serif;
     box-sizing: border-box;
-    /* background-color: hsl(0, 0%, 100%); */
 }
 body{
-    /* background-color: hsl(241, 100%, 89%); */
-    min-height: 100vh;
-    background-color: hsl(221, 100%, 96%);
+    background-color: hsl(0, 0%, 100%);
 }
 h2{
     margin-bottom: 20px;
 }
+h3{
+    margin-bottom: 28px;
+}
 button{
-    margin-top: 41px;
-    width: 12rem;
+    margin-top: 20px;
+    width: 287px;
     color: hsl(0, 0%, 100%);
-    padding: 10px;
+    padding: 20px;
     border: none;
-    border-radius: 15px;
+    border-radius: 40px;
     cursor: pointer;
     background: hsl(224, 30%, 27%);
     /* font-weight: 500; */
 }
 button:hover{
-    background: hsl(252, 100%, 67%);
+    background: linear-gradient(hsl(251, 100%, 63%), hsl(247, 89%, 59%), hsl(241, 84%, 55%));
 }
-li{
+.feeds li{
     display: flex;
     gap: 2em;
+    width: 280px;
+    height: 56px;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 16px;
     list-style: none;
     border-radius: 11px;
-    padding: 10px;
+    padding: 10px 10px;
 }
+
 /* 
  * Utilities
 */
 .font-size{
     font-size: 18px;
+}
+.fs-1{
+    font-size: 4em;
+}
+.fs-2{
+    font-size: 3em;
+}
+.fs-3{
+    font-size: 2em;
+}
+.fs-4{
+    font-size: 1.5em;
 }
 .fw-500{
     font-weight: 500;
@@ -51,8 +67,11 @@ li{
 .fw-800{
     font-weight: 800;
 }
-.text-align{
+.text-center{
     text-align: center;
+}
+.text-justify{
+    text-align: justify-all;
 }
 .text-color{
     color: hsl(0, 0%, 100%);
@@ -60,47 +79,43 @@ li{
 /* 
  * End of Utilities
 */
-.main-section{
-    display: flex;
-    /* padding-bottom: 150px; */
+.feedback-description > p{
+    margin: 0 auto;
+    max-width: 250px;
 }
 .container{
     max-width: 735px;
-    margin: 100px auto;
-    /* padding-top: 20px; */
-    /* padding-bottom: 150px; */
+    margin: 50px auto;
 }
 .wrapper{
     display: flex;
     background: hsl(0, 0%, 100%);
     border-radius: 32px;
+    box-shadow: 16px 20px 12px hsl(225, 86%, 97%);
 }
 .result-main{
+    width: 390px;
     border-radius: 33px;
-    background: linear-gradient(hsl(251, 97%, 62%), hsl(244, 86%, 56%));
+    /* background: linear-gradient(hsl(251, 97%, 62%), hsl(244, 86%, 56%)); */
+    /* 6743FF 5439F6 3630EC */
+    background: linear-gradient(#6743FF, #4633ED, #3630EC);
     font-weight: 500;
-    padding-top: 25px;
+    padding: 30px;
+    height: 514px;
 }
 .result{
-    padding: 20px;
     font-family: 'Hanken Grotesh';
-    margin: auto;
     font-weight: 500;
+    margin-top: 15px;
 }
 .summary{
     display: flex;
     flex-direction: column;
     align-items: start;
     margin: 40px;
-    width: 350px;
 }
 .result-section-color{
     color: hsl(256, 100%, 89%);
-}
-.feeds{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .numerator{
     color: hsl(224, 30%, 27%);
@@ -126,17 +141,59 @@ li{
     color: hsl(166, 100%, 37%);  
 }
 .visual-blue{
-    background: hsla(234, 85%, 45%, 0.02);
+    /* background: hsla(234, 85%, 45%, 0.02); */
+    background: hsl(240, 71%, 97%);
     color: hsl(234, 85%, 45%);
 }
+.score-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 25px 25px;
+}
 .score{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 60px;
+    justify-content: center;
+    padding: 50px 70px;
     background: linear-gradient( hsl(255, 72%, 45%),hsl(246, 86%, 57%));
-    border-radius: 100%;
+    border-radius: 65%;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+@media (max-width: 767.98px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .container{
+        max-width: unset;
+        margin: 0;
+    }
+    .result-main{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .feeds li{
+        width: 100%;
+    }
+    .feeds{
+        flex: 1;
+    }
+    .summary{
+        align-items: stretch;
+    }
+    .btn{
+        width: 100%;
+    }
+    .feedback-description > p{
+        max-width: 100%;
+    }
 }
