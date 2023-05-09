@@ -27,6 +27,15 @@ button{
 button:hover{
     background: linear-gradient(hsl(251, 100%, 63%), hsl(247, 89%, 59%), hsl(241, 84%, 55%));
 }
+
+.main-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .feeds li{
     display: flex;
     gap: 2em;
@@ -96,9 +105,8 @@ button:hover{
 .result-main{
     width: 390px;
     border-radius: 33px;
-    /* background: linear-gradient(hsl(251, 97%, 62%), hsl(244, 86%, 56%)); */
-    /* 6743FF 5439F6 3630EC */
     background: linear-gradient(#6743FF, #4633ED, #3630EC);
+    background: linear-gradient(#6743ff, #573DF8, #4936F2, #4132EF, #312CEB);
     font-weight: 500;
     padding: 30px;
     height: 514px;
@@ -141,7 +149,6 @@ button:hover{
     color: hsl(166, 100%, 37%);  
 }
 .visual-blue{
-    /* background: hsla(234, 85%, 45%, 0.02); */
     background: hsl(240, 71%, 97%);
     color: hsl(234, 85%, 45%);
 }
